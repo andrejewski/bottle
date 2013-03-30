@@ -1,0 +1,68 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]--> <!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]--> <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]--> <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Bottle</title>
+  <meta name="description" content="A simple random-messaging app">
+  <meta name="author" content="Chris Andrejewski">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/s/style.css?v=2">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body id='app'>
+    <div id='beach'>
+        <div id='waterline'>
+            <div id='waves'>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div id='shore'>
+            <div class='centar'>
+                <div id='isle'>
+                    <h1>Bottle</h1>
+                    <p>Remember the old message in a bottle? Bottle is a very simple app that let's you write whatever you want and someone might find it or someone might not. It can't be traced back to you.</p>
+
+                    <div class='noauth'>
+                        <a href='/auth/twitter' class='big btn'>
+                            Sign In with Twitter
+                        </a>
+                    </div>
+                    <div class='authed hidden'>
+                        <p>Please don't <a href='/i/logout'>logout</a>.</p>
+                    </div>
+
+                    <p>&copy; 2013 Chris Andrejewski. Yes, this is how I spend my Friday nights.
+
+                </div>
+                <div id='main'>
+                    <div id='writer' class='widget authed hidden'>
+                        <div id='flash'></div>
+                        <div id='paper'>
+                            <textarea rows='16' class='text varUI elastic' placeholder='Dear someone,'></textarea>
+                        </div>
+                        <div id='tools'>
+                            <div class='x-throw'>Bottle and Throw</div>
+                        </div>
+                    </div>
+                    <div id='inbox' class='widget'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+    <script type='text/javascript' src='/s/jquery.elastic.source.js'></script>
+    <script type='text/javascript' src='/s/bottle-script.js'></script>
+</body>
+</html>

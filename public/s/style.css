@@ -1,0 +1,67 @@
+/* bottle-style.css */
+
+* {font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+
+#app {margin: 0px; background-color: #F5F5DC;}
+
+.varUI {border: inherit; color: inherit; font-family: inherit; font-size: inherit; line-height: inherit; font-weight: inherit; outline: none; margin: 0px !important; width: 100%; resize: none !important; padding: 0px; background-color: transparent;}
+.varUI::-webkit-input-placeholder {color: #777;}
+
+.hidden {display: none !important;}
+
+#waterline {height: 80px;}
+
+#waves {border-bottom: 10px solid rgba(0,100,255,0.2);}
+#waves div {height: 10px;}
+#waves div:nth-child(2n) {background-color: #09f; opacity: 0.8;}
+#waves div:nth-child(2n-1) {background-color: #0af; opacity: 0.8;}
+
+#waves div:nth-child(2n), #waves div:nth-child(2n-1) {
+	animation-duration: 2s; 
+	animation-name: tide;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+	-webkit-animation-duration: 2s; 
+	-webkit-animation-name: tide;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+
+#waves div:nth-child(2n-1) {
+	animation-delay: 2s;
+}
+
+@keyframes tide {0% {height: 10px;} 100% {height: 12px;}}
+@-webkit-keyframes tide {0% {height: 10px;} 100% {height: 12px;}}
+
+#shore {padding: 10px 0px; font-size: 0px;}
+#isle, #main {display: inline-block; vertical-align: top;}
+#isle {font-size: 15px; width: 270px; padding-right: 30px;}
+#main {font-size: 15px; width: 420px; margin-top: 10px;}
+
+.btn {display: inline-block; color: #A67B5B; margin: 10px 0px; padding: 10px 12px; background-color: rgba(0,0,0,0.05); box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); text-decoration: none; cursor: pointer;}
+.btn {color: brown;}
+
+.elastic {min-height: 300px;}
+
+#inbox {margin: 20px 0px;}
+.note {display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; padding: 5px 10px; background-color: #fff; border-bottom: 1px solid #eee;}
+.note.on {white-space: pre-wrap; overflow: auto; padding: 10px; min-height: 100px;}
+
+#flash {margin: 5px 0px; padding: 5px 10px; font-size: 15px; line-height: 25px; background-color: rgba(0,0,0,0.08);}
+#flash:empty {display: none;}
+
+#paper {background-color: #fff; padding: 10px 10px; box-shadow: 0 2px 0px rgba(0,0,0,0.05);}
+#tools {padding: 0px 0px; text-align: right;}
+#tools div {display: inline-block; color: #A67B5B; margin: 10px 5px; padding: 7px 8px; background-color: rgba(0,0,0,0.05); box-shadow: inset 0 1px 2px rgba(0,0,0,0.05); cursor: pointer;}
+#tools div:hover {color: brown;}
+
+.centar {margin: 0px auto; width: 720px;}
+
+a {color: #08f; text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+h1, h2, h3 {color: #A67B5B; text-shadow: 0 2px 0px #FAD6A5;}
+
+p {color: #A67B5B; text-shadow: 0 2px 0px #FFFDD0;}

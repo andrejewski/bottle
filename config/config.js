@@ -1,4 +1,4 @@
-var ip = '192.168.1.45';
+var ip = 'localhost';
 var port = 5454;
 
 module.exports = {
